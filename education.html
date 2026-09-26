@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education | BlueSom Conservation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0A2E36;
+    --teal:#1B6B72;
+    --seafoam:#4FB3A9;
+    --bg:#EAF3F2;
+    --coral:#FF6F5E;
+    --text:#12262A;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:'Inter', sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+  }
+  header{
+    background:var(--navy);
+    color:#fff;
+    padding:1.2rem 2rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+  }
+  header .brand{
+    font-family:'Fraunces', serif;
+    font-size:1.3rem;
+    font-weight:700;
+  }
+  nav a{
+    color:#dff3f1;
+    text-decoration:none;
+    margin-left:1.5rem;
+    font-size:0.95rem;
+    font-weight:500;
+  }
+  nav a:hover, nav a.active{ color:var(--coral); }
+
+  .hero{
+    background:linear-gradient(180deg, var(--navy) 0%, var(--teal) 100%);
+    color:#fff;
+    text-align:center;
+    padding:4rem 1.5rem 5rem;
+  }
+  .hero h1{
+    font-family:'Fraunces', serif;
+    font-size:2.6rem;
+    font-weight:700;
+    max-width:700px;
+    margin:0 auto 1rem;
+  }
+  .hero p{
+    max-width:560px;
+    margin:0 auto;
+    color:#cdece7;
+    font-size:1.05rem;
+  }
+  .wave{ display:block; width:100%; margin-top:-2px; }
+
+  main{ max-width:1000px; margin:0 auto; padding:0 1.5rem 4rem; }
+
+  .intro{
+    text-align:center;
+    max-width:640px;
+    margin:-2.5rem auto 3rem;
+    background:#fff;
+    padding:1.8rem 2rem;
+    border-radius:10px;
+    box-shadow:0 8px 24px rgba(10,46,54,0.08);
+  }
+  .intro h2{ font-family:'Fraunces', serif; font-size:1.4rem; margin-bottom:0.5rem; }
+
+  .lessons{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:1.5rem;
+  }
+  .lesson{
+    background:#fff;
+    border-radius:10px;
+    padding:1.6rem;
+    border-top:4px solid var(--seafoam);
+  }
+  .lesson:nth-child(3n+2){ border-top-color:var(--coral); }
+  .lesson:nth-child(3n){ border-top-color:var(--teal); }
+  .lesson h3{
+    font-family:'Fraunces', serif;
+    font-size:1.15rem;
+    color:var(--navy);
+    margin-bottom:0.6rem;
+  }
+  .lesson p{ font-size:0.95rem; color:#3b4d51; }
+
+  .cta{
+    margin-top:3.5rem;
+    background:var(--navy);
+    color:#fff;
+    border-radius:12px;
+    padding:2.5rem;
+    text-align:center;
+  }
+  .cta h2{ font-family:'Fraunces', serif; font-size:1.5rem; margin-bottom:0.6rem; }
+  .cta p{ color:#cdece7; margin-bottom:1.3rem; }
+  .cta a{
+    background:var(--coral);
+    color:#fff;
+    padding:0.75rem 1.8rem;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    display:inline-block;
+  }
+
+  footer{
+    text-align:center;
+    padding:1.5rem;
+    font-size:0.85rem;
+    color:#4a6166;
+  }
+
+  @media (max-width:600px){
+    .hero h1{ font-size:2rem; }
+    nav a{ margin-left:1rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">BlueSom Conservation</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="education.html" class="active">Education</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Learn and Get Involved in Protecting Somalia's Ocean</h1>
+  <p>Short lessons on coastlines, coral reefs, and marine wildlife — and why protecting them matters.</p>
+</div>
+<svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" style="height:50px;">
+  <path fill="#EAF3F2" d="M0,32 C360,80 1080,-16 1440,32 L1440,60 L0,60 Z"></path>
+</svg>
+
+<main>
+  <div class="intro">
+    <h2>Why Ocean Awareness Matters</h2>
+    <p>Somalia's coastline is rich in marine life, but it faces threats from pollution, overfishing, and climate change. The lessons below explain the key issues and why they matter.</p>
+  </div>
+
+  <div class="lessons">
+    <div class="lesson">
+      <h3>Coral Reefs</h3>
+      <p>Coral reefs shelter hundreds of fish species and protect coastlines from strong waves. Rising sea temperatures are their biggest threat.</p>
+    </div>
+    <div class="lesson">
+      <h3>Seagrass Meadows</h3>
+      <p>Seagrass captures large amounts of carbon and provides a home for smaller marine life like shrimp and juvenile fish.</p>
+    </div>
+    <div class="lesson">
+      <h3>Marine Wildlife</h3>
+      <p>Dolphins, sea turtles, and sharks are key parts of Somalia's marine ecosystem. Their survival reflects the overall health of the ocean.</p>
+    </div>
+    <div class="lesson">
+      <h3>Plastic Pollution</h3>
+      <p>Millions of tons of plastic enter the world's oceans every year, harming marine life and polluting the country's coastlines.</p>
+    </div>
+    <div class="lesson">
+      <h3>Sustainable Fishing</h3>
+      <p>Overfishing reduces fish populations. Sustainable practices help ensure there is enough fish for future generations.</p>
+    </div>
+    <div class="lesson">
+      <h3>Climate Change</h3>
+      <p>Rising sea temperatures cause coral bleaching and sea level rise, which affect communities living along the coast.</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>Want to Get Involved?</h2>
+    <p>Contact us to learn about community programs, conservation projects, or how you can donate to support our work.</p>
+    <a href="index.html#contact">Contact Us</a>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 BlueSom Conservation. All rights reserved.
+</footer>
+
+</body>
+</html>
